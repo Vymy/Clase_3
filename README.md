@@ -1,2 +1,2 @@
-# Clase_3
+# Python_Intermedio_Repositorio
 Practica
