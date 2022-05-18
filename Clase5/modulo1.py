@@ -1,10 +1,3 @@
-# Actividad excepciones
-# Replicar el comportamiento de creacion de carpetas con Windows
-
-# al crear un directorio si ya existe agregarle entre parentesis el consecutivo
-# carpeta
-# carpeta(1)
-# carpeta(2)
 
 import psutil
 import os

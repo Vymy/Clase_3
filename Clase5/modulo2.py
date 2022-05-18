@@ -18,10 +18,10 @@ disco_uso = psutil.disk_usage('/')
 os.system('clear')
 
 info = "Informacion del sistema"
-nuc = "Nucleos del CPU => ", str(cpu_nucleos)
-cpu = "Frecuenca del CPU => ", str(cpu_frecuencia)
-mem ="Memoria virutal => ", str(memoria_virtual)
-disk = "Uso de disco => ", str(disco_uso)
+nuc = "Nucleos del CPU => ", cpu_nucleos
+cpu = "Frecuenca del CPU => ", cpu_frecuencia
+mem ="Memoria virutal => ", memoria_virtual
+disk = "Uso de disco => ", disco_uso
 
 print(info)
 print(nuc)
