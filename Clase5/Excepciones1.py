@@ -8,7 +8,6 @@
 import os
 
 loop = '1'
-loop2 = '2'
 def crear_carpetas(sufijo, cantidad):
     
     for i in range(cantidad):
@@ -19,15 +18,16 @@ sufijo = input ('Cual es el nombre de tu carpeta? ')
 while loop == '1':
     try:
         cantidad = int(input ('Cuantas carpetas quieres crear? '))
-        if cantidad == int:
+        if cantidad >= 0:
             loop = '3' 
     except ValueError as ex:
-        print('Debe ser numero entero...') 
+        print('Debe ser numero entero y entre 0 e infinito...') 
 
+cantidad_clon = cantidad - (cantidad- 1)
 try:
     crear_carpetas(sufijo, cantidad)
 except FileExistsError as ex2:
-    crear_carpetas(sufijo,f'({cantidad})'  )
+    crear_carpetas( f'{sufijo} '+ f'({str(cantidad_clon)})', cantidad)
 
 
 
